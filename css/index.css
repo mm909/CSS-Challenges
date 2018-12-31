@@ -1,0 +1,328 @@
+/* line 6, ../sass/index.sass */
+.pig {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  background-color: #FFDCB5;
+  margin: auto;
+  overflow: hidden;
+  z-index: -1;
+}
+/* line 15, ../sass/index.sass */
+.pig .face {
+  position: absolute;
+  width: 175px;
+  height: 175px;
+  background-color: #F7949A;
+  border-radius: 87.5px;
+  left: 50%;
+  top: 50%;
+  margin-left: -87.5px;
+  margin-top: -87.5px;
+}
+/* line 27, ../sass/index.sass */
+.pig .face .nose {
+  position: absolute;
+  width: 70px;
+  height: 50px;
+  background-color: #ffd4d7;
+  border-radius: 50px;
+  margin-left: -35px;
+  left: 50%;
+  top: 60%;
+  -webkit-animation-name: wiggle-nose;
+          animation-name: wiggle-nose;
+  -webkit-animation-duration: 6s;
+          animation-duration: 6s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+@-webkit-keyframes wiggle-nose {
+  0% {
+    top: 60%;
+  }
+  5% {
+    top: 62%;
+  }
+  10% {
+    top: 60%;
+  }
+}
+@keyframes wiggle-nose {
+  0% {
+    top: 60%;
+  }
+  5% {
+    top: 62%;
+  }
+  10% {
+    top: 60%;
+  }
+}
+/* line 47, ../sass/index.sass */
+.pig .face .nose .nosehole1, .pig .face .nose .nosehole2 {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background-color: #CE666D;
+  border-radius: 6px;
+  margin-top: -7.5px;
+  top: 42%;
+  -webkit-animation-name: wiggle-nose-hole;
+          animation-name: wiggle-nose-hole;
+  -webkit-animation-duration: 6s;
+          animation-duration: 6s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+@-webkit-keyframes wiggle-nose-hole {
+  0% {
+    margin-top: -7.5px;
+  }
+  5% {
+    margin-top: -5.5px;
+  }
+  10% {
+    margin-top: -7.5px;
+  }
+}
+@keyframes wiggle-nose-hole {
+  0% {
+    margin-top: -7.5px;
+  }
+  5% {
+    margin-top: -5.5px;
+  }
+  10% {
+    margin-top: -7.5px;
+  }
+}
+/* line 66, ../sass/index.sass */
+.pig .face .nose .nosehole1 {
+  right: 25%;
+}
+/* line 70, ../sass/index.sass */
+.pig .face .nose .nosehole2 {
+  left: 25%;
+}
+/* line 74, ../sass/index.sass */
+.pig .face .eye-l, .pig .face .eye-r {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border-radius: 10px;
+  margin-top: -10px;
+  margin-left: -10px;
+  top: 50%;
+  -webkit-animation-name: blink;
+          animation-name: blink;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+@-webkit-keyframes blink {
+  0% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+  }
+  5% {
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+  }
+  10% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+  }
+}
+@keyframes blink {
+  0% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+  }
+  5% {
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+  }
+  10% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+  }
+}
+/* line 93, ../sass/index.sass */
+.pig .face .eye-l .pupil, .pig .face .eye-r .pupil {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  background-color: black;
+  border-radius: 2.5px;
+  margin-right: -2.5px;
+  margin-top: -2.5px;
+  right: 50%;
+  top: 50%;
+}
+/* line 104, ../sass/index.sass */
+.pig .face .eye-l {
+  left: 30%;
+}
+/* line 108, ../sass/index.sass */
+.pig .face .eye-r {
+  left: 70%;
+}
+/* line 112, ../sass/index.sass */
+.pig .face .ear-l, .pig .face .ear-r {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  background-color: #ffd4d7;
+  border-style: solid;
+  border-width: 7px;
+  border-color: #F7949A;
+  border-radius: 10px;
+  top: -5%;
+  margin-right: -27px;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  z-index: -1;
+}
+/* line 128, ../sass/index.sass */
+.pig .face .ear-l {
+  right: 25%;
+  -webkit-transform: skew(-20deg) rotate(-25deg);
+          transform: skew(-20deg) rotate(-25deg);
+  -webkit-animation-name: wiggle-r;
+          animation-name: wiggle-r;
+}
+@-webkit-keyframes wiggle-r {
+  0% {
+    -webkit-transform: skew(-20deg) rotate(-25deg);
+            transform: skew(-20deg) rotate(-25deg);
+  }
+  5% {
+    -webkit-transform: skew(-20deg) rotate(-20deg);
+            transform: skew(-20deg) rotate(-20deg);
+  }
+  10% {
+    -webkit-transform: skew(-20deg) rotate(-25deg);
+            transform: skew(-20deg) rotate(-25deg);
+  }
+  15% {
+    -webkit-transform: skew(-20deg) rotate(-30deg);
+            transform: skew(-20deg) rotate(-30deg);
+  }
+  20% {
+    -webkit-transform: skew(-20deg) rotate(-25deg);
+            transform: skew(-20deg) rotate(-25deg);
+  }
+}
+@keyframes wiggle-r {
+  0% {
+    -webkit-transform: skew(-20deg) rotate(-25deg);
+            transform: skew(-20deg) rotate(-25deg);
+  }
+  5% {
+    -webkit-transform: skew(-20deg) rotate(-20deg);
+            transform: skew(-20deg) rotate(-20deg);
+  }
+  10% {
+    -webkit-transform: skew(-20deg) rotate(-25deg);
+            transform: skew(-20deg) rotate(-25deg);
+  }
+  15% {
+    -webkit-transform: skew(-20deg) rotate(-30deg);
+            transform: skew(-20deg) rotate(-30deg);
+  }
+  20% {
+    -webkit-transform: skew(-20deg) rotate(-25deg);
+            transform: skew(-20deg) rotate(-25deg);
+  }
+}
+/* line 145, ../sass/index.sass */
+.pig .face .ear-r {
+  right: 75%;
+  -webkit-transform: skew(20deg) rotate(25deg);
+          transform: skew(20deg) rotate(25deg);
+  -webkit-animation-name: wiggle-l;
+          animation-name: wiggle-l;
+}
+@-webkit-keyframes wiggle-l {
+  0% {
+    -webkit-transform: skew(20deg) rotate(25deg);
+            transform: skew(20deg) rotate(25deg);
+  }
+  5% {
+    -webkit-transform: skew(20deg) rotate(20deg);
+            transform: skew(20deg) rotate(20deg);
+  }
+  10% {
+    -webkit-transform: skew(20deg) rotate(25deg);
+            transform: skew(20deg) rotate(25deg);
+  }
+  15% {
+    -webkit-transform: skew(20deg) rotate(30deg);
+            transform: skew(20deg) rotate(30deg);
+  }
+  20% {
+    -webkit-transform: skew(20deg) rotate(25deg);
+            transform: skew(20deg) rotate(25deg);
+  }
+}
+@keyframes wiggle-l {
+  0% {
+    -webkit-transform: skew(20deg) rotate(25deg);
+            transform: skew(20deg) rotate(25deg);
+  }
+  5% {
+    -webkit-transform: skew(20deg) rotate(20deg);
+            transform: skew(20deg) rotate(20deg);
+  }
+  10% {
+    -webkit-transform: skew(20deg) rotate(25deg);
+            transform: skew(20deg) rotate(25deg);
+  }
+  15% {
+    -webkit-transform: skew(20deg) rotate(30deg);
+            transform: skew(20deg) rotate(30deg);
+  }
+  20% {
+    -webkit-transform: skew(20deg) rotate(25deg);
+            transform: skew(20deg) rotate(25deg);
+  }
+}
+/* line 163, ../sass/index.sass */
+body {
+  background-color: #ffecf0;
+  margin: 0px;
+  padding: 0px;
+}
+
+/* line 169, ../sass/index.sass */
+.wrapper {
+  width: 90%;
+  margin: auto;
+}
+
+/* line 174, ../sass/index.sass */
+.nav a {
+  color: #000;
+  text-decoration: none;
+  text-align: center;
+}
+/* line 179, ../sass/index.sass */
+.nav a:visited {
+  decoration: none;
+}
+
+/* line 182, ../sass/index.sass */
+.title {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 5px;
+}
+/* line 186, ../sass/index.sass */
+.title p {
+  margin: 0px;
+}

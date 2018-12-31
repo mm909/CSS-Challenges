@@ -1,0 +1,187 @@
+
+// 12/30/2018
+$pig-background: #FFDCB5
+$pig-primary: #F7949A
+$pig-secondary: pink
+.pig
+  position: relative
+  width: 400px
+  height: 400px
+  background-color: $pig-background
+  margin: auto
+  overflow: hidden
+  z-index: -1
+
+  .face
+    position: absolute
+    width: 175px
+    height: 175px
+    background-color: $pig-primary
+    border-radius: 87.5px
+    left: 50%
+    top: 50%
+    margin:
+      left: -87.5px
+      top: -87.5px
+
+    .nose
+      position: absolute
+      width: 70px
+      height: 50px
+      background-color: #ffd4d7
+      border-radius: 50px
+      margin-left: -35px
+      left: 50%
+      top: 60%
+      animation-name: wiggle-nose
+      animation-duration: 6s
+      animation-iteration-count: infinite
+      @keyframes wiggle-nose
+        0%
+          top: 60%
+        5%
+          top: 62%
+        10%
+          top: 60%
+
+      %nosehole
+        position: absolute
+        width: 12px
+        height: 12px
+        background-color: #CE666D
+        border-radius: 6px
+        margin-top: -7.5px
+        top: 42%
+        animation-name: wiggle-nose-hole
+        animation-duration: 6s
+        animation-iteration-count: infinite
+        @keyframes wiggle-nose-hole
+          0%
+            margin-top: -7.5px
+          5%
+            margin-top: -5.5px
+          10%
+            margin-top: -7.5px
+
+      .nosehole1
+        right: 25%
+        @extend %nosehole
+
+      .nosehole2
+        left: 25%
+        @extend %nosehole
+
+    %eye
+      position: absolute
+      width: 20px
+      height: 20px
+      background-color: white
+      border-radius: 10px
+      margin-top: -10px
+      margin-left: -10px
+      top: 50%
+      animation-name: blink
+      animation-duration: 5s
+      animation-iteration-count: infinite
+      @keyframes blink
+        0%
+          transform: scaleY(1)
+        5%
+          transform: scaleY(0)
+        10%
+          transform: scaleY(1)
+      .pupil
+        position: absolute
+        width: 5px
+        height: 5px
+        background-color: black
+        border-radius: 2.5px
+        margin-right: -2.5px
+        margin-top: -2.5px
+        right: 50%
+        top: 50%
+
+    .eye-l
+      left: 30%
+      @extend %eye
+
+    .eye-r
+      left: 70%
+      @extend %eye
+
+    %ear
+      width: 40px
+      height: 40px
+      position: absolute
+      background-color: #ffd4d7
+      border:
+        style: solid
+        width: 7px
+        color: #F7949A
+        radius: 10px
+      top: -5%
+      margin-right: -27px
+      animation-duration: 3s
+      animation-iteration-count: infinite
+      z-index: -1
+
+    .ear-l
+      right: 25%
+      transform: skew(-20deg) rotate(-25deg)
+      animation-name: wiggle-r
+      @keyframes wiggle-r
+        0%
+          transform: skew(-20deg) rotate(-25deg)
+        5%
+          transform: skew(-20deg) rotate(-20deg)
+        10%
+          transform: skew(-20deg) rotate(-25deg)
+        15%
+          transform: skew(-20deg) rotate(-30deg)
+        20%
+          transform: skew(-20deg) rotate(-25deg)
+      @extend %ear
+
+    .ear-r
+      right: 75%
+      transform: skew(20deg) rotate(25deg)
+      animation-name: wiggle-l
+      @keyframes wiggle-l
+        0%
+          transform: skew(20deg) rotate(25deg)
+        5%
+          transform: skew(20deg) rotate(20deg)
+        10%
+          transform: skew(20deg) rotate(25deg)
+        15%
+          transform: skew(20deg) rotate(30deg)
+        20%
+          transform: skew(20deg) rotate(25deg)
+      @extend %ear
+
+// General
+body
+  background:
+    color: #ffecf0
+  margin: 0px
+  padding: 0px
+
+.wrapper
+  width: 90%
+  margin: auto
+
+.nav
+  a
+    color: #000
+    text:
+      decoration: none
+      align: center
+    &:visited
+      decoration: none
+
+.title
+  text-align: center
+  font-size: 32px
+  margin-bottom: 5px
+  p
+    margin: 0px
