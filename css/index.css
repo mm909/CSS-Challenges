@@ -1,6 +1,28 @@
 /* line 2, ../sass/index.sass */
-.squareWrapper { position: relative; width: 400px; height: 400px; background-color: #3498db; margin: auto; }
+.ballWrapper { position: relative; width: 400px; height: 400px; background-color: #EF767A; margin: auto; }
 /* line 9, ../sass/index.sass */
+.ballWrapper .ball { position: absolute; width: 100px; height: 100px; border-radius: 50px; background-color: #49DCB1; left: 50%; top: 50%; margin-left: -50px; margin-top: -50px; z-index: 2; -webkit-animation-name: ball; animation-name: ball; -webkit-animation-duration: 1.5s; animation-duration: 1.5s; -webkit-animation-iteration-count: infinite; animation-iteration-count: infinite; -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; }
+@-webkit-keyframes ball { 20% { -webkit-transform: translateY(-100px) scale(0.95, 1.05); transform: translateY(-100px) scale(0.95, 1.05); }
+  45% { -webkit-transform: translateY(5px) scale(1.15, 0.85); transform: translateY(5px) scale(1.15, 0.85); }
+  70%, 85% { -webkit-transform: translateY(0); transform: translateY(0); }
+  100% { -webkit-transform: translateY(0); transform: translateY(0); } }
+@keyframes ball { 20% { -webkit-transform: translateY(-100px) scale(0.95, 1.05); transform: translateY(-100px) scale(0.95, 1.05); }
+  45% { -webkit-transform: translateY(5px) scale(1.15, 0.85); transform: translateY(5px) scale(1.15, 0.85); }
+  70%, 85% { -webkit-transform: translateY(0); transform: translateY(0); }
+  100% { -webkit-transform: translateY(0); transform: translateY(0); } }
+/* line 33, ../sass/index.sass */
+.ballWrapper .shadow { position: relative; width: 100px; height: 5px; margin: auto; top: 248px; background-color: rgba(0, 0, 0, 0.2); border-radius: 25px; -webkit-animation-name: ball-shadow; animation-name: ball-shadow; -webkit-animation-duration: 1.5s; animation-duration: 1.5s; -webkit-animation-iteration-count: infinite; animation-iteration-count: infinite; -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; }
+@-webkit-keyframes ball-shadow { 20% { -webkit-transform: scale(0.9); transform: scale(0.9); }
+  45% { -webkit-transform: scale(1.15); transform: scale(1.15); }
+  75%, 80% { -webkit-transform: scale(1); transform: scale(1); }
+  100% { -webkit-transform: scale(1); transform: scale(1); } }
+@keyframes ball-shadow { 20% { -webkit-transform: scale(0.9); transform: scale(0.9); }
+  45% { -webkit-transform: scale(1.15); transform: scale(1.15); }
+  75%, 80% { -webkit-transform: scale(1); transform: scale(1); }
+  100% { -webkit-transform: scale(1); transform: scale(1); } }
+/* line 57, ../sass/index.sass */
+.squareWrapper { position: relative; width: 400px; height: 400px; background-color: #3498db; margin: auto; }
+/* line 64, ../sass/index.sass */
 .squareWrapper .box { position: absolute; width: 100px; height: 100px; background-color: white; left: 50%; top: 50%; margin-left: -50px; margin-top: -50px; z-index: 2; -webkit-animation-name: box; animation-name: box; -webkit-animation-duration: 1.5s; animation-duration: 1.5s; -webkit-animation-iteration-count: infinite; animation-iteration-count: infinite; -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; }
 @-webkit-keyframes box { 20% { -webkit-transform: translateY(-100px) rotateX(180deg); transform: translateY(-100px) rotateX(180deg); }
   45% { -webkit-transform: translateY(0) rotateX(180deg); transform: translateY(0) rotateX(180deg); }
@@ -10,7 +32,7 @@
   45% { -webkit-transform: translateY(0) rotateX(180deg); transform: translateY(0) rotateX(180deg); }
   70%, 85% { -webkit-transform: translateY(25px) rotateX(180deg) scale(2, 0.5); transform: translateY(25px) rotateX(180deg) scale(2, 0.5); }
   100% { -webkit-transform: translateY(0) rotateX(180deg) scale(-1); transform: translateY(0) rotateX(180deg) scale(-1); } }
-/* line 32, ../sass/index.sass */
+/* line 87, ../sass/index.sass */
 .squareWrapper .shadow { position: relative; width: 100px; height: 5px; margin: auto; top: 248px; background-color: rgba(0, 0, 0, 0.2); border-radius: 25px; -webkit-animation-name: shadow; animation-name: shadow; -webkit-animation-duration: 1.5s; animation-duration: 1.5s; -webkit-animation-iteration-count: infinite; animation-iteration-count: infinite; -webkit-animation-fill-mode: forwards; animation-fill-mode: forwards; }
 @-webkit-keyframes shadow { 20% { -webkit-transform: scale(0.5); transform: scale(0.5); }
   45% { -webkit-transform: scale(1, 1); transform: scale(1, 1); }
@@ -20,11 +42,11 @@
   45% { -webkit-transform: scale(1, 1); transform: scale(1, 1); }
   75%, 80% { -webkit-transform: scale(2, 0.8); transform: scale(2, 0.8); }
   100% { -webkit-transform: scale(-1); transform: scale(-1); } }
-/* line 60, ../sass/index.sass */
+/* line 115, ../sass/index.sass */
 .pig { position: relative; width: 400px; height: 400px; background-color: #FFDCB5; margin: auto; overflow: hidden; z-index: -1; }
-/* line 69, ../sass/index.sass */
+/* line 124, ../sass/index.sass */
 .pig .face { position: absolute; width: 175px; height: 175px; background-color: #F7949A; border-radius: 87.5px; left: 50%; top: 50%; margin-left: -87.5px; margin-top: -87.5px; }
-/* line 81, ../sass/index.sass */
+/* line 136, ../sass/index.sass */
 .pig .face .nose { position: absolute; width: 70px; height: 50px; background-color: #ffd4d7; border-radius: 50px; margin-left: -35px; left: 50%; top: 60%; -webkit-animation-name: wiggle-nose; animation-name: wiggle-nose; -webkit-animation-duration: 6s; animation-duration: 6s; -webkit-animation-iteration-count: infinite; animation-iteration-count: infinite; }
 @-webkit-keyframes wiggle-nose { 0% { top: 60%; }
   5% { top: 62%; }
@@ -32,7 +54,7 @@
 @keyframes wiggle-nose { 0% { top: 60%; }
   5% { top: 62%; }
   10% { top: 60%; } }
-/* line 101, ../sass/index.sass */
+/* line 156, ../sass/index.sass */
 .pig .face .nose .nosehole1, .pig .face .nose .nosehole2 { position: absolute; width: 12px; height: 12px; background-color: #CE666D; border-radius: 6px; margin-top: -7.5px; top: 42%; -webkit-animation-name: wiggle-nose-hole; animation-name: wiggle-nose-hole; -webkit-animation-duration: 6s; animation-duration: 6s; -webkit-animation-iteration-count: infinite; animation-iteration-count: infinite; }
 @-webkit-keyframes wiggle-nose-hole { 0% { margin-top: -7.5px; }
   5% { margin-top: -5.5px; }
@@ -40,11 +62,11 @@
 @keyframes wiggle-nose-hole { 0% { margin-top: -7.5px; }
   5% { margin-top: -5.5px; }
   10% { margin-top: -7.5px; } }
-/* line 120, ../sass/index.sass */
+/* line 175, ../sass/index.sass */
 .pig .face .nose .nosehole1 { right: 25%; }
-/* line 124, ../sass/index.sass */
+/* line 179, ../sass/index.sass */
 .pig .face .nose .nosehole2 { left: 25%; }
-/* line 128, ../sass/index.sass */
+/* line 183, ../sass/index.sass */
 .pig .face .eye-l, .pig .face .eye-r { position: absolute; width: 20px; height: 20px; background-color: white; border-radius: 10px; margin-top: -10px; margin-left: -10px; top: 50%; -webkit-animation-name: blink; animation-name: blink; -webkit-animation-duration: 5s; animation-duration: 5s; -webkit-animation-iteration-count: infinite; animation-iteration-count: infinite; }
 @-webkit-keyframes blink { 0% { -webkit-transform: scaleY(1); transform: scaleY(1); }
   5% { -webkit-transform: scaleY(0); transform: scaleY(0); }
@@ -52,16 +74,16 @@
 @keyframes blink { 0% { -webkit-transform: scaleY(1); transform: scaleY(1); }
   5% { -webkit-transform: scaleY(0); transform: scaleY(0); }
   10% { -webkit-transform: scaleY(1); transform: scaleY(1); } }
-/* line 147, ../sass/index.sass */
+/* line 202, ../sass/index.sass */
 .pig .face .eye-l .pupil, .pig .face .eye-r .pupil { position: absolute; width: 5px; height: 5px; background-color: black; border-radius: 2.5px; margin-right: -2.5px; margin-top: -2.5px; right: 50%; top: 50%; }
-/* line 158, ../sass/index.sass */
+/* line 213, ../sass/index.sass */
 .pig .face .eye-l { left: 30%; }
-/* line 162, ../sass/index.sass */
+/* line 217, ../sass/index.sass */
 .pig .face .eye-r { left: 70%; }
-/* line 166, ../sass/index.sass */
+/* line 221, ../sass/index.sass */
 .pig .face .ear-l, .pig .face .ear-r { width: 40px; height: 40px; position: absolute; background-color: #ffd4d7; border-style: solid; border-width: 7px; border-color: #F7949A; border-radius: 10px; top: -5%; margin-right: -27px; -webkit-animation-duration: 3s; animation-duration: 3s; -webkit-animation-iteration-count: infinite; animation-iteration-count: infinite; z-index: -1; }
-/* line 182, ../sass/index.sass */
-.pig .face .ear-l { right: 25%; -webkit-transform: skew(-20deg) rotate(-25deg); transform: skew(-20deg) rotate(-25deg); -webkit-animation-name: wiggle-r; animation-name: wiggle-r; }
+/* line 237, ../sass/index.sass */
+.pig .face .ear-l { right: 30%; -webkit-transform: skew(-20deg) rotate(-25deg); transform: skew(-20deg) rotate(-25deg); -webkit-animation-name: wiggle-r; animation-name: wiggle-r; }
 @-webkit-keyframes wiggle-r { 0% { -webkit-transform: skew(-20deg) rotate(-25deg); transform: skew(-20deg) rotate(-25deg); }
   5% { -webkit-transform: skew(-20deg) rotate(-20deg); transform: skew(-20deg) rotate(-20deg); }
   10% { -webkit-transform: skew(-20deg) rotate(-25deg); transform: skew(-20deg) rotate(-25deg); }
@@ -72,7 +94,7 @@
   10% { -webkit-transform: skew(-20deg) rotate(-25deg); transform: skew(-20deg) rotate(-25deg); }
   15% { -webkit-transform: skew(-20deg) rotate(-30deg); transform: skew(-20deg) rotate(-30deg); }
   20% { -webkit-transform: skew(-20deg) rotate(-25deg); transform: skew(-20deg) rotate(-25deg); } }
-/* line 199, ../sass/index.sass */
+/* line 254, ../sass/index.sass */
 .pig .face .ear-r { right: 75%; -webkit-transform: skew(20deg) rotate(25deg); transform: skew(20deg) rotate(25deg); -webkit-animation-name: wiggle-l; animation-name: wiggle-l; }
 @-webkit-keyframes wiggle-l { 0% { -webkit-transform: skew(20deg) rotate(25deg); transform: skew(20deg) rotate(25deg); }
   5% { -webkit-transform: skew(20deg) rotate(20deg); transform: skew(20deg) rotate(20deg); }
@@ -84,20 +106,20 @@
   10% { -webkit-transform: skew(20deg) rotate(25deg); transform: skew(20deg) rotate(25deg); }
   15% { -webkit-transform: skew(20deg) rotate(30deg); transform: skew(20deg) rotate(30deg); }
   20% { -webkit-transform: skew(20deg) rotate(25deg); transform: skew(20deg) rotate(25deg); } }
-/* line 217, ../sass/index.sass */
+/* line 272, ../sass/index.sass */
 body { background-color: #141d26; margin: 0px; padding: 0px; color: #ffffff; }
 
-/* line 224, ../sass/index.sass */
+/* line 279, ../sass/index.sass */
 .wrapper { width: 90%; margin: auto; }
 
-/* line 229, ../sass/index.sass */
+/* line 284, ../sass/index.sass */
 .nav h1 { font-weight: 100; }
-/* line 231, ../sass/index.sass */
+/* line 286, ../sass/index.sass */
 .nav a { color: #ffffff; text-decoration: none; text-align: center; }
-/* line 236, ../sass/index.sass */
+/* line 291, ../sass/index.sass */
 .nav a:visited { decoration: none; }
 
-/* line 239, ../sass/index.sass */
+/* line 294, ../sass/index.sass */
 .title { text-align: center; font-size: 32px; margin-bottom: 5px; }
-/* line 244, ../sass/index.sass */
+/* line 298, ../sass/index.sass */
 .title p { margin: 0px; }
