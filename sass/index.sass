@@ -1,8 +1,62 @@
+// 12/31/2018
+.squareWrapper
+  position: relative
+  width: 400px
+  height: 400px
+  background:
+    color: #3498db
+  margin: auto
+  .box
+    position: absolute
+    width: 100px
+    height: 100px
+    background-color: white
+    left: 50%
+    top: 50%
+    margin-left: -50px
+    margin-top: -50px
+    z-index: 2
+    animation-name: box
+    animation-duration: 1.5s
+    animation-iteration-count: infinite
+    animation-fill-mode: forwards
+    @keyframes box
+      20%
+        transform: translateY(-100px) rotateX(180deg)
+      45%
+        transform: translateY(0) rotateX(180deg)
+      70%, 85%
+        transform: translateY(25px) rotateX(180deg) scale(2, 0.5)
+      100%
+        transform: translateY(0) rotateX(180deg) scale(-1)
+  .shadow
+    position: relative
+    width: 100px
+    height: 5px
+    margin: auto
+    top: 248px
+    background:
+      color: rgba(0, 0, 0, 0.2)
+    border-radius: 25px
+    animation-name: shadow
+    animation-duration: 1.5s
+    animation-iteration-count: infinite
+    animation-fill-mode: forwards
+    @keyframes shadow
+      20%
+        transform: scale(0.5)
+      45%
+        transform: scale(1, 1)
+      75%, 80%
+        transform: scale(2, 0.8)
+      100%
+        transform: scale(-1)
 
 // 12/30/2018
 $pig-background: #FFDCB5
 $pig-primary: #F7949A
 $pig-secondary: pink
+
 .pig
   position: relative
   width: 400px
@@ -162,17 +216,20 @@ $pig-secondary: pink
 // General
 body
   background:
-    color: #ffecf0
+    color: #141d26
   margin: 0px
   padding: 0px
+  color: #ffffff
 
 .wrapper
   width: 90%
   margin: auto
 
 .nav
+  h1
+    font-weight: 100
   a
-    color: #000
+    color: #ffffff
     text:
       decoration: none
       align: center
@@ -180,6 +237,7 @@ body
       decoration: none
 
 .title
+
   text-align: center
   font-size: 32px
   margin-bottom: 5px
