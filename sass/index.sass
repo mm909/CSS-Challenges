@@ -1,3 +1,66 @@
+// 1/9/2019
+.circleWrapper
+  position: relative
+  width: 400px
+  height: 400px
+  background:
+    color: #E56262
+  margin: auto
+  .circle1
+    position: absolute
+    z-index: 2
+    right: 50%
+    margin-right: -25px
+    top: 50%
+    margin-top: -25px
+    height: 50px
+    width: 50px
+    background:
+      color: white
+    border-radius: 25px
+    animation-name: circle1
+    animation-duration: 5s
+    animation-iteration-count: infinite
+    @keyframes circle1
+      25%
+        transform: scale(0)
+  .circle2
+    position: absolute
+    z-index: 1
+    right: 50%
+    margin-right: -50px
+    top: 50%
+    margin-top: -50px
+    height: 100px
+    width: 100px
+    background:
+      color: red
+    border-radius: 50px
+    animation-name: circle2
+    animation-duration: 5s
+    animation-iteration-count: infinite
+    @keyframes circle2
+      50%
+        transform: scale(0)
+  .circle3
+    position: absolute
+    z-index: 0
+    right: 50%
+    margin-right: -75px
+    top: 50%
+    margin-top: -75px
+    height: 150px
+    width: 150px
+    background:
+      color: blue
+    border-radius: 75px
+    animation-name: circle3
+    animation-duration: 5s
+    animation-iteration-count: infinite
+    @keyframes circle3
+      75%
+        transform: scale(0)
+
 // 1/1/2019
 .humanWrapper
   position: relative
