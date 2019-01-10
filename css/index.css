@@ -1,4 +1,83 @@
 /* line 2, ../sass/index.sass */
+.mWrapper {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  background-color: #3498db;
+  margin: auto;
+}
+/* line 9, ../sass/index.sass */
+.mWrapper .m {
+  top: 50%;
+  margin-top: -50px;
+  left: 50%;
+  margin-left: -50px;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+}
+/* line 17, ../sass/index.sass */
+.mWrapper .m1 {
+  position: absolute;
+  width: 25px;
+  height: 75px;
+  top: 50px;
+  background-color: red;
+}
+/* line 23, ../sass/index.sass */
+.mWrapper .m2 {
+  position: absolute;
+  height: 0;
+  width: 0;
+  top: 25px;
+  border-left: 25px solid pink;
+  border-right: 25px solid transparent;
+  border-top: 25px solid transparent;
+}
+/* line 31, ../sass/index.sass */
+.mWrapper .m3 {
+  position: absolute;
+  width: 25px;
+  height: 50px;
+  -webkit-transform: rotate(90deg) skewX(-45deg);
+          transform: rotate(90deg) skewX(-45deg);
+  background-color: blue;
+  top: 12px;
+  left: 12px;
+}
+/* line 39, ../sass/index.sass */
+.mWrapper .m4 {
+  position: absolute;
+  width: 25px;
+  height: 50px;
+  -webkit-transform: rotate(-90deg) skewX(45deg);
+          transform: rotate(-90deg) skewX(45deg);
+  background-color: lightblue;
+  top: 12px;
+  left: 62px;
+}
+/* line 47, ../sass/index.sass */
+.mWrapper .m5 {
+  position: absolute;
+  height: 0;
+  width: 0;
+  top: 25px;
+  left: 49px;
+  border-left: 25px solid transparent;
+  border-right: 25px solid red;
+  border-top: 25px solid transparent;
+}
+/* line 56, ../sass/index.sass */
+.mWrapper .m6 {
+  position: absolute;
+  width: 25px;
+  left: 75px;
+  height: 75px;
+  top: 50px;
+  background-color: pink;
+}
+
+/* line 65, ../sass/index.sass */
 .circleWrapper {
   position: relative;
   width: 400px;
@@ -6,7 +85,7 @@
   background-color: #E56262;
   margin: auto;
 }
-/* line 9, ../sass/index.sass */
+/* line 72, ../sass/index.sass */
 .circleWrapper .circle1 {
   position: absolute;
   z-index: 2;
@@ -37,7 +116,7 @@
             transform: scale(0);
   }
 }
-/* line 27, ../sass/index.sass */
+/* line 90, ../sass/index.sass */
 .circleWrapper .circle2 {
   position: absolute;
   z-index: 1;
@@ -68,7 +147,7 @@
             transform: scale(0);
   }
 }
-/* line 45, ../sass/index.sass */
+/* line 108, ../sass/index.sass */
 .circleWrapper .circle3 {
   position: absolute;
   z-index: 0;
@@ -99,7 +178,7 @@
             transform: scale(0);
   }
 }
-/* line 65, ../sass/index.sass */
+/* line 128, ../sass/index.sass */
 .humanWrapper {
   position: relative;
   width: 400px;
@@ -107,7 +186,7 @@
   background-color: #8e44ad;
   margin: auto;
 }
-/* line 72, ../sass/index.sass */
+/* line 135, ../sass/index.sass */
 .humanWrapper .human {
   position: absolute;
   height: 300px;
@@ -117,7 +196,7 @@
   right: 50%;
   margin-right: -75px;
 }
-/* line 80, ../sass/index.sass */
+/* line 143, ../sass/index.sass */
 .humanWrapper .human .head {
   position: absolute;
   height: 50px;
@@ -127,7 +206,7 @@
   border-radius: 25px;
   background-color: #fff;
 }
-/* line 89, ../sass/index.sass */
+/* line 152, ../sass/index.sass */
 .humanWrapper .human .body {
   position: absolute;
   background-color: #fff;
@@ -138,14 +217,14 @@
   top: 60px;
   z-index: 2;
 }
-/* line 99, ../sass/index.sass */
+/* line 162, ../sass/index.sass */
 .humanWrapper .human .body .rightarm {
   position: absolute;
   width: 60px;
   height: 60px;
   right: -50px;
 }
-/* line 104, ../sass/index.sass */
+/* line 167, ../sass/index.sass */
 .humanWrapper .human .body .rightarm .upperarm {
   position: absolute;
   background-color: #fff;
@@ -176,7 +255,7 @@
     top: -1.5px;
   }
 }
-/* line 120, ../sass/index.sass */
+/* line 183, ../sass/index.sass */
 .humanWrapper .human .body .rightarm .lowerarm {
   position: absolute;
   background-color: #fff;
@@ -210,14 +289,14 @@
             transform: rotate(30deg);
   }
 }
-/* line 138, ../sass/index.sass */
+/* line 201, ../sass/index.sass */
 .humanWrapper .human .body .leftarm {
   position: absolute;
   width: 60px;
   height: 60px;
   left: -50px;
 }
-/* line 143, ../sass/index.sass */
+/* line 206, ../sass/index.sass */
 .humanWrapper .human .body .leftarm .upperarm {
   position: absolute;
   background-color: #fff;
@@ -230,7 +309,7 @@
   -webkit-transform-origin: center right;
           transform-origin: center right;
 }
-/* line 153, ../sass/index.sass */
+/* line 216, ../sass/index.sass */
 .humanWrapper .human .body .leftarm .lowerarm {
   position: absolute;
   background-color: #fff;
@@ -244,7 +323,7 @@
   -webkit-transform-origin: center right;
           transform-origin: center right;
 }
-/* line 164, ../sass/index.sass */
+/* line 227, ../sass/index.sass */
 .humanWrapper .human .legs {
   position: absolute;
   background-color: rgba(0, 0, 0, 0.1);
@@ -254,7 +333,7 @@
   top: 170px;
   margin-right: -30px;
 }
-/* line 173, ../sass/index.sass */
+/* line 236, ../sass/index.sass */
 .humanWrapper .human .legs .rightleg {
   position: absolute;
   right: 0px;
@@ -263,7 +342,7 @@
   height: 130px;
   border-radius: 28px;
 }
-/* line 181, ../sass/index.sass */
+/* line 244, ../sass/index.sass */
 .humanWrapper .human .legs .leftleg {
   position: absolute;
   left: 0px;
@@ -273,7 +352,7 @@
   border-radius: 28px;
 }
 
-/* line 191, ../sass/index.sass */
+/* line 254, ../sass/index.sass */
 .ballWrapper {
   position: relative;
   width: 400px;
@@ -281,7 +360,7 @@
   background-color: #EF767A;
   margin: auto;
 }
-/* line 198, ../sass/index.sass */
+/* line 261, ../sass/index.sass */
 .ballWrapper .ball {
   position: absolute;
   width: 100px;
@@ -338,7 +417,7 @@
             transform: translateY(0);
   }
 }
-/* line 222, ../sass/index.sass */
+/* line 285, ../sass/index.sass */
 .ballWrapper .shadow {
   position: relative;
   width: 100px;
@@ -392,7 +471,7 @@
             transform: scale(1);
   }
 }
-/* line 246, ../sass/index.sass */
+/* line 309, ../sass/index.sass */
 .squareWrapper {
   position: relative;
   width: 400px;
@@ -400,7 +479,7 @@
   background-color: #3498db;
   margin: auto;
 }
-/* line 253, ../sass/index.sass */
+/* line 316, ../sass/index.sass */
 .squareWrapper .box {
   position: absolute;
   width: 100px;
@@ -456,7 +535,7 @@
             transform: translateY(0) rotateX(180deg) scale(-1);
   }
 }
-/* line 276, ../sass/index.sass */
+/* line 339, ../sass/index.sass */
 .squareWrapper .shadow {
   position: relative;
   width: 100px;
@@ -510,7 +589,7 @@
             transform: scale(-1);
   }
 }
-/* line 304, ../sass/index.sass */
+/* line 367, ../sass/index.sass */
 .pig {
   position: relative;
   width: 400px;
@@ -520,7 +599,7 @@
   overflow: hidden;
   z-index: -1;
 }
-/* line 313, ../sass/index.sass */
+/* line 376, ../sass/index.sass */
 .pig .face {
   position: absolute;
   width: 175px;
@@ -532,7 +611,7 @@
   margin-left: -87.5px;
   margin-top: -87.5px;
 }
-/* line 325, ../sass/index.sass */
+/* line 388, ../sass/index.sass */
 .pig .face .nose {
   position: absolute;
   width: 70px;
@@ -571,7 +650,7 @@
     top: 60%;
   }
 }
-/* line 345, ../sass/index.sass */
+/* line 408, ../sass/index.sass */
 .pig .face .nose .nosehole1, .pig .face .nose .nosehole2 {
   position: absolute;
   width: 12px;
@@ -609,15 +688,15 @@
     margin-top: -7.5px;
   }
 }
-/* line 364, ../sass/index.sass */
+/* line 427, ../sass/index.sass */
 .pig .face .nose .nosehole1 {
   right: 25%;
 }
-/* line 368, ../sass/index.sass */
+/* line 431, ../sass/index.sass */
 .pig .face .nose .nosehole2 {
   left: 25%;
 }
-/* line 372, ../sass/index.sass */
+/* line 435, ../sass/index.sass */
 .pig .face .eye-l, .pig .face .eye-r {
   position: absolute;
   width: 20px;
@@ -662,7 +741,7 @@
             transform: scaleY(1);
   }
 }
-/* line 391, ../sass/index.sass */
+/* line 454, ../sass/index.sass */
 .pig .face .eye-l .pupil, .pig .face .eye-r .pupil {
   position: absolute;
   width: 5px;
@@ -674,15 +753,15 @@
   right: 50%;
   top: 50%;
 }
-/* line 402, ../sass/index.sass */
+/* line 465, ../sass/index.sass */
 .pig .face .eye-l {
   left: 30%;
 }
-/* line 406, ../sass/index.sass */
+/* line 469, ../sass/index.sass */
 .pig .face .eye-r {
   left: 70%;
 }
-/* line 410, ../sass/index.sass */
+/* line 473, ../sass/index.sass */
 .pig .face .ear-l, .pig .face .ear-r {
   width: 40px;
   height: 40px;
@@ -700,7 +779,7 @@
           animation-iteration-count: infinite;
   z-index: -1;
 }
-/* line 426, ../sass/index.sass */
+/* line 489, ../sass/index.sass */
 .pig .face .ear-l {
   right: 30%;
   -webkit-transform: skew(-20deg) rotate(-25deg);
@@ -752,7 +831,7 @@
             transform: skew(-20deg) rotate(-25deg);
   }
 }
-/* line 443, ../sass/index.sass */
+/* line 506, ../sass/index.sass */
 .pig .face .ear-r {
   right: 75%;
   -webkit-transform: skew(20deg) rotate(25deg);
@@ -804,7 +883,7 @@
             transform: skew(20deg) rotate(25deg);
   }
 }
-/* line 461, ../sass/index.sass */
+/* line 524, ../sass/index.sass */
 body {
   background-color: #141d26;
   margin: 0px;
@@ -812,34 +891,34 @@ body {
   color: #ffffff;
 }
 
-/* line 468, ../sass/index.sass */
+/* line 531, ../sass/index.sass */
 .wrapper {
   width: 90%;
   margin: auto;
 }
 
-/* line 473, ../sass/index.sass */
+/* line 536, ../sass/index.sass */
 .nav h1 {
   font-weight: 100;
 }
-/* line 475, ../sass/index.sass */
+/* line 538, ../sass/index.sass */
 .nav a {
   color: #ffffff;
   text-decoration: none;
   text-align: center;
 }
-/* line 480, ../sass/index.sass */
+/* line 543, ../sass/index.sass */
 .nav a:visited {
   decoration: none;
 }
 
-/* line 483, ../sass/index.sass */
+/* line 546, ../sass/index.sass */
 .title {
   text-align: center;
   font-size: 32px;
   margin-bottom: 5px;
 }
-/* line 487, ../sass/index.sass */
+/* line 550, ../sass/index.sass */
 .title p {
   margin: 0px;
 }
